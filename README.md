@@ -1,4 +1,4 @@
-# bglf
+# BattleGroundsLootFaster
 An AutoHotkey script that lets you pick up stuff faster in PlayerUnknown's BattleGrounds. 
 
 # Disclaimer
