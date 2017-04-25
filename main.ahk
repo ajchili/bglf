@@ -1,14 +1,31 @@
 SetTitleMatchMode, 3
+WinGetPos , , , Width, Height ; Gets Width and Height of monitor
+i := 3 ; Number of iterations that the script will run per key press
 
-; Loop to detect when ` is pressed
-Loop
+Loop ; Loop to detect when ` is pressed
 {
-    ; Gets Width and Height of monitor
-    WinGetPos , , , Width, Height
-    
-    if (WinActive("ahk_exe TslGame.exe") and GetKeyState("``", P) = 1)
+    if (GetKeyState("NumpadAdd", P) = 1) ; Add 1 iteration
     {
-        loop 3
+        While GetKeyState("NumpadAdd") ; Prevents more than one iteration of the addition to occur
+        {
+        }
+        i++
+    }
+    if (GetKeyState("NumpadSub", P) = 1) ; Sub 1 iteration
+    {
+        While GetKeyState("NumpadSub") ; Prevents more than one iteration of the subtraction to occur
+        {
+        }
+        i--
+    }
+    if (GetKeyState("RControl", P) = 1) ; Display how many iterations will run
+    {
+        MsgBox %i%
+    }
+    
+    if (WinActive("ahk_exe TslGame.exe") and GetKeyState("``", P) = 1) ; Checks to see if game is actinve and ` is pressed before running script
+    {
+        loop i
         {
             ; MouseClickDrag, Left, 215, 160, 940, 300, 5 1080p Display
             ; MouseClickDrag, Left, 215, 230, 940, 300, 5 1440p Display
@@ -20,6 +37,6 @@ Loop
 }                                                       
 return
 
-j::
+j:: ; Exit script when pressing j
     ExitApp
 return
