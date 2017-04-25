@@ -4,14 +4,14 @@ i := 3 ; Number of iterations that the script will run per key press
 
 Loop ; Loop to detect when ` is pressed
 {
-    if (GetKeyState("NumpadAdd", P) = 1) ; Add 1 iteration
+    if (GetKeyState("NumpadAdd", P) = 1 and i < 10) ; Add 1 iteration
     {
         While GetKeyState("NumpadAdd") ; Prevents more than one iteration of the addition to occur
         {
         }
         i++
     }
-    if (GetKeyState("NumpadSub", P) = 1) ; Sub 1 iteration
+    if (GetKeyState("NumpadSub", P) = 1 and i > 1) ; Sub 1 iteration
     {
         While GetKeyState("NumpadSub") ; Prevents more than one iteration of the subtraction to occur
         {
