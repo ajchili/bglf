@@ -1,8 +1,20 @@
-TabToggle(){
+SetTitleMatchMode, 3
+#IfWinActive PLAYERUNKNOWN'S BATTLEGROUNDS
 
-    if(GetKeyState("Tab","P"))
+; Loop to detect when ` is pressed
+Loop
+{   
+    if (GetKeyState("``", P) = 1)
     {
-        CoordMode, Mouse, Relative
-        MouseClickDrag, Left, 300, -100, 100, -100, 2
+        MouseClickDrag, Left, 215, 160, 940, 300, 5
+        MouseClickDrag, Left, 215, 160, 940, 300, 5
+        MouseClickDrag, Left, 215, 160, 940, 300, 5
+        MouseClickDrag, Left, 215, 160, 940, 300, 5
+        MouseClickDrag, Left, 215, 160, 940, 300, 5
     }
-}
+}                                                       
+
+return
+
+j::ExitApp
+return
