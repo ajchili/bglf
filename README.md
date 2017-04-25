@@ -23,6 +23,9 @@ This is a script and can aide you when playing the game. While all of the moveme
    * To exit the script, press `j`.
 4. Make revisions to the script as you see fit. If a better key works for you, change it! A list of all the keys avaliable to use for AutoHotkey can be found [here](https://autohotkey.com/docs/KeyList.htm).
 
+## Demo Video
+[![YouTube Link](https://i.ytimg.com/vi/RG6q0OKTFbQ/hqdefault.jpg)](https://www.youtube.com/watch?v=RG6q0OKTFbQ)
+
 ### How to contribute
 1. Fork the repo.
 2. Make the changes that you think would better the script.
