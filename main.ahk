@@ -1,6 +1,6 @@
 WinActivate, ahk_exe TslGame.exe
 WinGetActiveStats, Title, Width, Height, X, Y
-MsgBox, The active window "%Title%" is %Width% wide`, %Height% tall`
+
 i := 3 ; Number of iterations that the script will run per key press
 
 Loop
@@ -28,11 +28,15 @@ Loop
     {
         Loop %i%
         {
-            ; MouseClickDrag, Left, 215, 160, 940, 300, 5 ; 1080p Display
-            ; MouseClickDrag, Left, 215, 230, 940, 300, 5 ; 1440p Display
-            
-            ; This needs testing on 1080p monitors
-            MouseClickDrag, Left, Width / 9, Height / 6.25, Width / 2.5, Height / 4, 5 ; Scaled resolution display
+            ; MouseClickDrag, Left, 215, 160, 1000, 300, 5 ; 1080p Display
+            ; MouseClickDrag, Left, 215, 230, 1000, 300, 5 ; 1440p Display
+            ; Width calculation is 62.5x + 99.5, where x is number of items on ground
+                                                                                     ; 1080p        1440p
+            MouseClickDrag, Left, Width / 9, Height / 6.75, Width / 1.92, Height / 4 ; Height 160   Height 230
+            MouseClickDrag, Left, Width / 9, Height / 4.80, Width / 1.92, Height / 4 ; Height 225
+          ; MouseClickDrag, Left, Width / 9, Height / 3.72, Width / 1.92, Height / 4 ; Height 290
+          ; MouseClickDrag, Left, Width / 9, Height / 3.09, Width / 1.92, Height / 4 ; Height 350
+          ; MouseClickDrag, Left, Width / 9, Height / 2.63, Width / 1.92, Height / 4 ; Height 410
         }
     }
 }                                                   
