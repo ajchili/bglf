@@ -1,7 +1,7 @@
 # bglf
 A script to pick up stuff in PlayerUnknown's BattleGrounds. 
 
-## Disclaimer
+# Disclaimer
 This is a script and can aide you when playing the game. While all of the movement is being interpolated as an input from the user, a ban could still be possible. You are likewise technically cheating, but we laziness prevails. Just be sure to use the script understanding this and at your own risk.
 
 ## How to setup bglf
@@ -19,9 +19,10 @@ This is a script and can aide you when playing the game. While all of the moveme
    * To use the script, open your inventory and then press ``` ` ```. _By default, the script will drag 3 items from the ground into your inventory_.
    * To increase the amount of times that the script will run, press `Numberpad +`. _This will increase the number of iterations by **1** until **10** iterations occur per calling of the script_.
    * To decrease the amount of times that the script will run, press `Numberpad -`. _This will decrase the number of iterations by **1** until only **1** iteration occur per calling of the script_.
+   * To display the number of iterations the script will run for, press `Right Control`. _If your keyboard does not have a `Right Control` key, look at the next step to determine what key would work best as a substitute_.
 4. Make revisions to the script as you see fit. If a better key works for you, change it! A list of all the keys avaliable to use for AutoHotkey can be found [here](https://autohotkey.com/docs/KeyList.htm).
 
-## How to contribute
+### How to contribute
 1. Fork the repo.
 2. Make the changes that you think would better the script.
 3. Pull request! _If your code will benefit the script and is documented properly, we will be sure to merge it asap_.
