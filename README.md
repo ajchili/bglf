@@ -1,5 +1,5 @@
 # BattleGroundsLootFaster
-An AutoHotkey script that lets you pick up stuff faster in PlayerUnknown's BattleGrounds. 
+An AutoHotkey script that lets you pick up stuff faster in [PlayerUnknown's BattleGrounds](http://store.steampowered.com/app/578080/). 
 
 # Disclaimer
 This is a script and can aide you when playing the game. While all of the movement is being interpolated as input from the user, a ban could still be possible. You are likewise _technically_ cheating, but, laziness prevails. Just be sure to use the script understanding this and at your own risk.
@@ -24,6 +24,8 @@ This is a script and can aide you when playing the game. While all of the moveme
 4. Make revisions to the script as you see fit. If a better key works for you, change it! A list of all the keys avaliable to use for AutoHotkey can be found [here](https://autohotkey.com/docs/KeyList.htm).
 
 ## Demo Video
+Video courtesy of [zappybiby](https://github.com/zappybiby)
+
 [![YouTube Link](https://i.ytimg.com/vi/RG6q0OKTFbQ/hqdefault.jpg)](https://www.youtube.com/watch?v=RG6q0OKTFbQ)
 
 ### How to contribute
