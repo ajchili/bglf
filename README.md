@@ -20,6 +20,7 @@ This is a script and can aide you when playing the game. While all of the moveme
    * To increase the amount of times that the script will run, press `Numberpad +`. _This will increase the number of iterations by **1** until **10** iterations occur per calling of the script_.
    * To decrease the amount of times that the script will run, press `Numberpad -`. _This will decrase the number of iterations by **1** until only **1** iteration occur per calling of the script_.
    * To display the number of iterations the script will run for, press `Right Control`. _If your keyboard does not have a `Right Control` key, look at the next step to determine what key would work best as a substitute_.
+   * To exit the script, press `j`.
 4. Make revisions to the script as you see fit. If a better key works for you, change it! A list of all the keys avaliable to use for AutoHotkey can be found [here](https://autohotkey.com/docs/KeyList.htm).
 
 ### How to contribute
