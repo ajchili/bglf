@@ -1,6 +1,6 @@
 ; Loop to detect tab event
 Loop
-{   
+{
     if (GetKeyState("Tab", P) = 1)
     {
         CoordMode, Mouse, Relative
