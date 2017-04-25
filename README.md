@@ -2,7 +2,7 @@
 A script to pick up stuff in PlayerUnknown's BattleGrounds. 
 
 # Disclaimer
-This is a script and can aide you when playing the game. While all of the movement is being interpolated as an input from the user, a ban could still be possible. You are likewise technically cheating, but we laziness prevails. Just be sure to use the script understanding this and at your own risk.
+This is a script and can aide you when playing the game. While all of the movement is being interpolated as an input from the user, a ban could still be possible. You are likewise technically cheating, but, laziness prevails. Just be sure to use the script understanding this and at your own risk.
 
 ## How to setup bglf
 1. Download the [AutoHotkey Installer](https://autohotkey.com/download/) from the [AutoHotkey website](https://autohotkey.com/).
