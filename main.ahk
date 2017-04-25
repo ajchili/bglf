@@ -23,7 +23,7 @@ Loop ; Loop to detect when ` is pressed
         MsgBox %i%
     }
     
-    if (WinActive("ahk_exe TslGame.exe") and GetKeyState("``", P) = 1) ; Checks to see if game is actinve and ` is pressed before running script
+    if (WinActive("ahk_exe TslGame.exe") and GetKeyState("``", P) = 1) ; Checks to see if game is active and ` is pressed before running script
     {
         loop i
         {
@@ -37,6 +37,6 @@ Loop ; Loop to detect when ` is pressed
 }                                                       
 return
 
-j:: ; Exit script when pressing j
+j:: ; Exit script by pressing j
     ExitApp
 return
