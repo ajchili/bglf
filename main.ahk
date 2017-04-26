@@ -3,27 +3,7 @@ WinGetActiveStats, Title, Width, Height, X, Y
 
 i := 3 ; Number of iterations that the script will run per key press
 
-Loop
-{
-    if (GetKeyState("NumpadAdd", P) = 1 and i < 10) ; Press "+" on Numpad to add 1 iteration 
-    {
-        While GetKeyState("NumpadAdd") ; Prevents more than one iteration of the addition to occur
-        {
-        }
-        i++
-    }
-    if (GetKeyState("NumpadSub", P) = 1 and i > 1) ; Press "-" on Numpad to subtract 1 iteration
-    {
-        While GetKeyState("NumpadSub") ; Prevents more than one iteration of the subtraction to occur
-        {
-        }
-        i-- 
-    }
-    if (GetKeyState("RControl", P) = 1) ; Displays window that states how many iterations will run
-    {
-        MsgBox %i%
-    }
-    
+`::
     if (WinActive("ahk_exe TslGame.exe") and GetKeyState("``", P) = 1) ; Runs script when game is active and "`" is pressed
     {
         Loop %i%
@@ -39,7 +19,30 @@ Loop
           ; MouseClickDrag, Left, Width / 9, Height / 2.63, Width / 1.92, Height / 4 ; Height 410
         }
     }
-}                                                   
+return
+
+NumpadAdd::
+    if (i < 10) ; Press "+" on Numpad to add 1 iteration 
+    {
+        While GetKeyState("NumpadAdd") ; Prevents more than one iteration of the addition to occur
+        {
+        }
+        i++
+    }
+return
+
+Numpadsub::
+    if (i > 1) ; Press "-" on Numpad to subtract 1 iteration
+    {
+        While GetKeyState("NumpadSub") ; Prevents more than one iteration of the subtraction to occur
+        {
+        }
+        i-- 
+    }
+return
+
+RControl::
+    MsgBox %i%
 return
 
 j:: ; Exit script by pressing j
