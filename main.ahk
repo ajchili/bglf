@@ -1,8 +1,12 @@
 WinActivate, ahk_exe TslGame.exe
-
 WinGetActiveStats, Title, Width, Height, X, Y
-
 SetFormat, Float, 0.2
+
+sx := Width / 9
+sy := (65 * (Height / 1080.0)) + (95 * (Height / 1080.0))
+ex := Width / 1.92
+ey := Height / 4
+sy2 := (65 * (2 * (Height / 1080.0)) + (95 * (Height / 1080.0))
 
 i := 1 ; Number of iterations that the script will run per key press
 
@@ -11,8 +15,8 @@ i := 1 ; Number of iterations that the script will run per key press
     {
         Loop %i%
         {
-            MouseClickDrag, Left, Width / 9, Height / 6.75, Width / 1.92, Height / 4
-            MouseClickDrag, Left, Width / 9, Height / 4.80, Width / 1.92, Height / 4
+            MouseClickDrag, Left, %sx%, %sy%, %ex%, %ey%
+            MouseClickDrag, Left, %sx%, %sy2%, %ex%, %ey%
           ; MouseClickDrag, Left, Width / 9, Height / 3.72, Width / 1.92, Height / 4 
           ; MouseClickDrag, Left, Width / 9, Height / 3.04, Width / 1.92, Height / 4
           ; MouseClickDrag, Left, Width / 9, Height / 2.57, Width / 1.92, Height / 4
@@ -32,7 +36,7 @@ NumpadAdd::
 return
 
 Numpadsub::
-    if (i > 1) ; Prevents less than one iteration of the subtraction to occur
+    if (i > 1) ; Prevents less than one iteration
     {
         While GetKeyState("NumpadSub") ; Press "-" on Numpad to subtract 1 iteration
         {
