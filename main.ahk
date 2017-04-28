@@ -6,7 +6,7 @@ sx := Width / 9
 sy := (65 * (Height / 1080.0)) + (95 * (Height / 1080.0))
 ex := Width / 1.92
 ey := Height / 4
-sy2 := (65 * (2 * (Height / 1080.0)) + (95 * (Height / 1080.0))
+sy2 := (65 * (2 * (Height / 1080.0))) + (95 * (Height / 1080.0))
 
 i := 1 ; Number of iterations that the script will run per key press
 
