@@ -17,9 +17,6 @@ i := 1 ; Number of iterations that the script will run per key press
         {
             MouseClickDrag, Left, %sx%, %sy%, %ex%, %ey%
             MouseClickDrag, Left, %sx%, %sy2%, %ex%, %ey%
-          ; MouseClickDrag, Left, Width / 9, Height / 3.72, Width / 1.92, Height / 4 
-          ; MouseClickDrag, Left, Width / 9, Height / 3.04, Width / 1.92, Height / 4
-          ; MouseClickDrag, Left, Width / 9, Height / 2.57, Width / 1.92, Height / 4
         }
 
     }
