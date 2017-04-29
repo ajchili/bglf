@@ -11,7 +11,7 @@ This is a script and can aide you when playing the game. While all of the moveme
 2. After installing AutoHotkey, download or fork the repo.
    * _You don't need the whole repo to run the script. If you are low on space just download the [main.ahk](https://github.com/ajchili/bglf/blob/master/main.ahk) file_.
 3. Run the script. After installing AutoHotkey, simply double click on the main.ahk file and the script will run.
-   * _For the most accurate usage of the script, it is currently advised to run it through the [SciTE4AutoHotkey](http://fincs.ahk4.net/scite4ahk/) IDE._
+   * _For the most accurate usage of the script, it is advised to run it through the [SciTE4AutoHotkey](http://fincs.ahk4.net/scite4ahk/) IDE, however, this is not required._
 
 ## How to use bglf
 1. Start the script, look at the previous section if you need any help.
