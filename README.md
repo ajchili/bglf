@@ -1,8 +1,6 @@
 # BattleGroundsLootFaster
 An AutoHotkey script that lets you pick up stuff faster in [PlayerUnknown's BattleGrounds](http://store.steampowered.com/app/578080/). 
 
-# Unfortunately, this _bug_ was patched as of May 25th, 2017, making bglf useless in terms of the speed it once provided.
-
 # Disclaimer
 This is a script and can aide you when playing the game. While all of the movement is being interpolated as input from the user, a ban could still be possible. You are likewise _technically_ cheating, but, laziness prevails. Just be sure to use the script understanding this and at your own risk.
 
